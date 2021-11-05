@@ -1,0 +1,30 @@
+<template>
+    <div class="clearAllContainer">
+        <span class="clearAllBtn" @click="clearTodo">메시지 목록 초기화</span>
+    </div>
+</template>
+
+<script>
+export default {
+    methods:{
+        clearTodo(){
+            this.$emit("clearAllSub");
+        }
+    }
+}
+</script>
+<style>
+.clearAllContainer{
+    width:9.5rem;
+    height:50px;
+    line-height: 50px;
+    background-color: white;
+    border-radius: 5px;
+    margin: 0 auto;
+}
+.clearAllBtn{
+    color: #e20303;
+    display: block;
+    cursor: pointer;
+}
+</style>
